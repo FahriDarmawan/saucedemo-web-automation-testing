@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="2.328" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Add Product to Cart" name="User can add product to their cart" time="2.189">
+<system-out><![CDATA[
+Given User already on Product Page..........................................passed
+When User click button Add to Cart..........................................passed
+And User click the cart icon button.........................................passed
+Then User will be redirected to Cart Page...................................passed
+And The product will be displayed on cart...................................passed
+]]></system-out>
+</testcase>
+</testsuite>

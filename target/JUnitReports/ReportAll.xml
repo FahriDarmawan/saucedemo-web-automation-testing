@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="8.747" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="Add Product to Cart" name="User can add product to their cart" time="2.191">
+<system-out><![CDATA[
+Given User already on Product Page..........................................passed
+When User click button Add to Cart..........................................passed
+And User click the cart icon button.........................................passed
+Then User will be redirected to Cart Page...................................passed
+And The product will be displayed on cart...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Checkout Product" name="User can checkout the product" time="1.832">
+<system-out><![CDATA[
+Given User already login and add product to the cart........................passed
+And User access the Cart Page...............................................passed
+When User click Checkout Button.............................................passed
+Then User will be redirected to Your Information Page.......................passed
+And User input the First Name...............................................passed
+And User input the Last Name................................................passed
+And User input the ZipPostal Code...........................................passed
+When User click the Continue Button.........................................passed
+Then User will be redirected to Overview Page...............................passed
+When User click the Finish Button...........................................passed
+Then User will be redirected to Complete Order Page.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="User login with valid credential" time="1.489">
+<system-out><![CDATA[
+Given User access the SauceDemo login page..................................passed
+When User input the registered username.....................................passed
+And User input the registered password......................................passed
+And User click the Login Button.............................................passed
+Then User will be redirected to Products Page...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="User login with invalid credential" time="1.389">
+<system-out><![CDATA[
+Given User access the SauceDemo login page..................................passed
+When User input the unregistered username...................................passed
+And User input the unregistered password....................................passed
+And User click the Login Button.............................................passed
+Then Error message will be displayed........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logout functionality" name="User can logout from the website" time="1.707">
+<system-out><![CDATA[
+Given User already login with the registered account........................passed
+When User click hamburger icon menu.........................................passed
+And Sidebar menu will be displayed..........................................passed
+And User click the logout button............................................passed
+Then User will be redirected to login page..................................passed
+]]></system-out>
+</testcase>
+</testsuite>

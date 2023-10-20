@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="2.583" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Checkout Product" name="User can checkout the product" time="2.467">
+<system-out><![CDATA[
+Given User already login and add product to the cart........................passed
+And User access the Cart Page...............................................passed
+When User click Checkout Button.............................................passed
+Then User will be redirected to Your Information Page.......................passed
+And User input the First Name...............................................passed
+And User input the Last Name................................................passed
+And User input the ZipPostal Code...........................................passed
+When User click the Continue Button.........................................passed
+Then User will be redirected to Overview Page...............................passed
+When User click the Finish Button...........................................passed
+Then User will be redirected to Complete Order Page.........................passed
+]]></system-out>
+</testcase>
+</testsuite>
